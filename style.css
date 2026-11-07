@@ -1,0 +1,428 @@
+:root {
+    --primary-color: #1abc9c; /* Teal/Aqua Green button color */
+    --dark-text: #1e293b;
+    --light-bg: #f0f4f8; /* Unique soft unique light background instead of plain white */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff !important;
+    padding: 15px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--dark-text);
+}
+
+.navbar-brand img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+    color: #475569;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Navbar Buttons */
+.btn-nav-login {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    padding: 6px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.btn-nav-login:hover {
+    background-color: rgba(26, 188, 156, 0.05);
+    color: var(--primary-color);
+}
+
+.btn-nav-register {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 6px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border: none;
+}
+
+.btn-nav-register:hover {
+    background-color: #16a085;
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 70px 0;
+    background-color: transparent; /* Background inherit karega taake unique look aaye */
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.05rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Hero Buttons */
+.btn-hero-primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 12px 24px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-hero-primary:hover {
+    background-color: #16a085;
+    color: #ffffff;
+}
+
+.btn-hero-outline {
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    padding: 12px 24px;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btn-hero-outline:hover {
+    border-color: #94a3b8;
+    color: #0f172a;
+}
+
+/* Image Wrapper with Floating Badges */
+.hero-image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.hero-main-img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Floating SCHOOL Badges */
+.school-badge-top {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1e293b;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.school-badge-top span {
+    width: 8px;
+    height: 8px;
+    background-color: #f59e0b; /* Orange dot */
+    border-radius: 50%;
+}
+
+.school-badge-bottom {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1e293b;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.school-badge-bottom span {
+    width: 8px;
+    height: 8px;
+    background-color: #f59e0b; /* Orange dot */
+    border-radius: 50%;
+}
+
+/* Core Modules Overview Section */
+.modules-section {
+    padding: 40px 0 80px 0;
+    background-color: transparent;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 40px;
+}
+
+.module-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: transform 0.2s;
+}
+
+.module-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.module-icon-box {
+    background-color: #f0fdf4;
+    color: var(--primary-color);
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.module-content h6 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.module-content p {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+}
+/* Login */
+/* General Body Styling for Authentication Pages */
+body.bg-light {
+    background-color: #f8fafc !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 12px !important;
+    background-color: #ffffff;
+}
+
+/* Form Inputs */
+.form-control {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.15);
+}
+
+/* Form Labels */
+.form-label {
+    font-weight: 500;
+    color: #1e293b;
+    font-size: 0.9rem;
+}
+
+/* Submit Buttons */
+.btn-primary {
+    background-color: #1abc9c !important;
+    border-color: #1abc9c !important;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #16a085 !important;
+    border-color: #16a085 !important;
+}
+
+/* Links inside cards */
+a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+
+/* Split-Screen Layout Styling for Register Page */
+body.bg-light {
+    background-color: #f8fafc !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.split-container {
+    min-height: 100vh;
+}
+
+.register-bg-image {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Optional dark overlay on the background image */
+.register-bg-image::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 12px !important;
+    background-color: #ffffff;
+}
+
+/* Form Inputs */
+.form-control {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.15);
+}
+
+/* Form Labels */
+.form-label {
+    font-weight: 500;
+    color: #1e293b;
+    font-size: 0.9rem;
+}
+
+/* Submit Buttons */
+.btn-primary {
+    background-color: #1abc9c !important;
+    border-color: #1abc9c !important;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #16a085 !important;
+    border-color: #16a085 !important;
+}
+
+/* Links */
+a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+/* footer */
+.hover-link {
+    transition: all 0.3s ease;
+}
+.hover-link:hover {
+    color: #0d6efd !important;
+    padding-left: 5px;
+}
+/* Theme fixed
+/* --- Global e-Vaccination Teal & White Theme Standard --- */
+:root {
+    --primary-teal: #20c997;
+    --primary-teal-dark: #138496;
+    --teal-light: #e6fcf5;
+}
+
+/* Overriding Bootstrap primary colors globally to match Teal theme */
+.btn-primary, .bg-primary {
+    background-color: #20c997 !important;
+    border-color: #20c997 !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #1aa179 !important;
+    border-color: #1aa179 !important;
+}
+
+.text-primary {
+    color: #20c997 !important;
+}
+
+.border-primary {
+    border-color: #20c997 !important;
+}
+
+/* Consistent Hero Banners */
+.page-hero, .about-hero, .faq-hero {
+    background: linear-gradient(135deg, #20c997, #138496) !important;
+    color: white !important;
+}
